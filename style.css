@@ -12,9 +12,76 @@ html {
     height: 100%;
     width: 100%;
 }
-
+@media only screen and (max-width:700px) {  
+    #firstR{
+        flex-direction: column;
+        width: 100% !important;
+        height: 150vh !important ;
+        /* background-color: red; */
+    }
+    #scndR{
+        flex-direction: column;
+        width: 100% !important;
+        height: 150vh !important ;
+    }
+    #card{
+        /* background-color: red; */
+        font-size: 0.9em;
+        width: 100% !important;
+        height: 1000vh !important;
+        
+    }
+    #thrdR{
+        flex-direction: column;
+        width: 100% !important;
+        height: 150vh !important ;
+    }
+    #connect{
+        font-size: 0.9em;
+        width: 100% !important;
+        height: 1000vh !important;
+    }
+    #airPods{
+        font-size: 0.9em;
+        width: 100% !important;
+        height: 1000vh !important;
+    }
+    #card img{
+        position: relative !important;
+        top: -10% !important;
+    }
+    #trade{
+        /* background-color: red; */
+        width: 100% !important;
+        height: 1000vh !important;
+    }
+    #macAir{
+        width: 100% !important;
+        /* background-color: green; */
+        height: 1000vh !important;
+    }
+    #macAir_title{
+        /* background-color: red; */
+        width: 90% !important;
+        font-size: 0.8em !important;
+    }
+    #mac_disc{
+        width: 100% !important;
+        height: 1000vh !important;
+        font-size: 0.9em !important;
+        background-color: pink;
+    }
+    #mac_title{
+        margin-top: 20px;
+    } 
+}
 @media only screen and (max-width: 900px) {
     #ul li:not(#Apple):not(#menu) {
+        display: none;
+    }
+    #page1 >img,
+    #page2 >img,
+    #page3 >img {
         display: none;
     }
 
@@ -27,18 +94,19 @@ html {
     }
 
     #page2 {
-        background-image: url("./Resources/short_watch.jpg");
-        background-size: cover;
+        height: 100%;
+        width: 100%;  
+        background-image: url("./Resources/Large_watch.jpg");
         background-position: center;
-        background-repeat: no-repeat;
-        color: red;
+        background-color: #f5f5f7;
+        background-repeat: no-repeat;  
     }
 
     #page1 {
+        height: 60vh; 
         background-image: url("./Resources/Short-iPhone.jpg");
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-position: center 20%;
     }
 
     #Apple {
@@ -57,15 +125,18 @@ html {
     }
 
     #title {
-        margin-top: -20px;
+        margin-top: 10px;
     }
 
     #title h1 {
-        font-size: 40px !important;
+        font-size: 2rem !important;
     }
 
     #title h3 {
-        font-size: 25px !important;
+        font-size: 1.2rem !important;
+    }
+    #title_btn button:nth-child(1):nth-child(2){
+        margin: 0px 20px;
     }
 
     #page3 img {
@@ -73,18 +144,18 @@ html {
     }
 
     #page3 {
+        height: 50vh;  /* Reduced from 70vh */
         background-image: url("./Resources/Sh_mothers_Day.png");
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-position: center 30%;  /* Focus on the gift area */
     }
 
     #pg3_title h1 {
-        font-size: 35px;
+        font-size: 1.8rem;
     }
 
     #pg3_title h3 {
-        font-size: 27px !important;
+        font-size: 1.1rem !important;
     }
 }
 
@@ -246,6 +317,7 @@ h4 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position:center;
 }
 
 #pg_title {
@@ -361,6 +433,7 @@ h4 {
 
 #macAir_title {
     position: absolute;
+    font-size: 0.9em;
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
@@ -513,12 +586,14 @@ span {
 
 #cnct_title {
     position: absolute;
+    font-size: 1.2em;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    margin-top: 9%;
 }
 
 #airPods {
