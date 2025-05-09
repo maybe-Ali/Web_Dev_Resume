@@ -13,6 +13,12 @@ html {
     width: 100%;
 }
 @media only screen and (max-width:700px) {  
+    
+    #page1 >img,
+    #page2 >img,
+    #page3 >img {
+        display: block;
+    }
     #firstR{
         flex-direction: column;
         width: 100% !important;
@@ -146,6 +152,7 @@ html {
     #page3 {
         height: 50vh;  /* Reduced from 70vh */
         background-image: url("Sh_mothers_Day.png");
+        display:block;
         background-size: cover;
         background-position: center 30%;  /* Focus on the gift area */
     }
