@@ -96,7 +96,7 @@ html {
     #page2 {
         height: 100%;
         width: 100%;  
-        background-image: url("./Resources/Large_watch.jpg");
+        background-image: url("Large_watch.jpg");
         background-position: center;
         background-color: #f5f5f7;
         background-repeat: no-repeat;  
@@ -104,7 +104,7 @@ html {
 
     #page1 {
         height: 60vh; 
-        background-image: url("./Resources/Short-iPhone.jpg");
+        background-image: url("Short-iPhone.jpg");
         background-size: cover;
         background-position: center 20%;
     }
@@ -145,7 +145,7 @@ html {
 
     #page3 {
         height: 50vh;  /* Reduced from 70vh */
-        background-image: url("./Resources/Sh_mothers_Day.png");
+        background-image: url("Sh_mothers_Day.png");
         background-size: cover;
         background-position: center 30%;  /* Focus on the gift area */
     }
